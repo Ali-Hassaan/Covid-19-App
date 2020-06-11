@@ -1,0 +1,41 @@
+.container {
+    margin: 50px 0;
+}
+
+.card {
+    margin: 0 2% !important;
+    height: 300px;
+    width: 600px;
+    
+
+}
+
+.infected {
+    background: linear-gradient(57deg, rgb(8, 8, 194, 0.5), rgb(8, 8, 194, 0.5));
+
+}
+
+.recovered {
+    background: linear-gradient(57deg, rgb(0, 255, 0 ,0.5), rgb(0, 255, 0 ,0.5) )
+
+}
+
+.deaths {
+    background: linear-gradient(57deg, rgb(255, 0, 0, 0.5), rgb(255, 0, 0, 0.5));
+
+}
+
+.RecoveryRate {
+    margin: 2% 2px !important;
+    background: linear-gradient(57deg, rgb(0, 255, 0 ,0.5), rgb(0, 255, 0 ,0.5) )
+    
+}
+
+.DeathRate {
+    margin: 2% 2px !important;
+    background: linear-gradient(57deg, rgb(255, 0, 0, 0.5), rgb(255, 0, 0, 0.5));
+    
+}
+
+
+
