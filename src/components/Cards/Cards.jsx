@@ -16,7 +16,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
       <Grid container spacing={3} justify="center">
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
           <CardContent>
-            <Typography variant="h2" color="textSecondary" gutterBottom>
+            <Typography variant="h3" color="textSecondary" gutterBottom>
               Infected
             </Typography>
             <Typography variant="h3" component="h2">
@@ -32,7 +32,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
           <CardContent>
-            <Typography variant= "h2" color="textSecondary" gutterBottom>
+            <Typography variant= "h3" color="textSecondary" gutterBottom>
               Recovered
             </Typography>
             <Typography variant="h3" component="h2">
@@ -48,7 +48,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
           <CardContent>
-            <Typography variant="h2" color="textSecondary" gutterBottom>
+            <Typography variant="h3" color="textSecondary" gutterBottom>
               Deaths
             </Typography>
             <Typography variant="h3" component="h2">
@@ -65,7 +65,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
 
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.RecoveryRate)}>
                 <CardContent>
-                    <Typography variant="h2" color="textSecondary">
+                    <Typography variant="h3" color="textSecondary">
                       Recovery Rate
                       </Typography>
                     <Typography variant="h3">
@@ -75,7 +75,7 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
             </Grid>
             <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.DeathRate)}>
           <CardContent>
-                    <Typography variant="h2" color="textSecondary">
+                    <Typography variant="h3" color="textSecondary">
                       Death Rate</Typography>
                     <Typography variant="h3">
                         {Math.round(deaths.value/confirmed.value*100)}%

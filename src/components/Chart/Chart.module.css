@@ -8,16 +8,24 @@
     .container {
       width: 100%;
     }
+    
+    .polarChartClass {
+      width: 500px;
+  }
+
+  .barChartClass {
+    width: 300px;
+}
+    
   }
   
   .polarChartClass {
     width: 500px;
+    padding: 10px;
 }
 
-.rowContainer {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  flex: 1 0 auto;
+.barChartClass {
+  width: 500px;
+  padding: 10px;
 }
 

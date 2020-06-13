@@ -116,11 +116,14 @@ const polarChart = (
 
 
   return (
-    <div className={styles.container}>
+    <div>
+    <div className={styles.chartContainer}>
       {country ? barChart : lineChart}
+      </div>
       <div className={styles.polarChartClass}>
                     {polarChart}
                 </div>
+                
      </div>
   );
 };
