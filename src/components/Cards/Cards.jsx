@@ -8,9 +8,10 @@ import styles from './Cards.module.css';
 
 const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
   if (!confirmed) {
-    return 'Loading...';
+    return 'Loading...'
   }
-
+let closedCases = [recovered.value + deaths.value];
+let activeCases = [confirmed.value - closedCases];
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
@@ -82,6 +83,35 @@ const Info = ({ data: { confirmed, recovered, deaths, lastUpdate } }) => {
                     </Typography>
                 </CardContent>   
             </Grid>
+              
+            <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.ActiveCases)}>
+          <CardContent>
+                    <Typography variant="h3" color="textSecondary">
+                      Active Cases</Typography>
+                      <Typography variant="h3" component="h2">
+                      <CountUp start={0} end={activeCases} duration={2.75} separator="," />
+                      </Typography>
+                </CardContent>   
+            </Grid>
+
+            <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.ClosedCases)}>
+                <CardContent>
+                    <Typography variant="h3" color="textSecondary">
+                      Closed Cases
+                      </Typography>
+                      <Typography variant="h3" component="h2">
+              <CountUp start={0} end={closedCases} duration={2.75} separator="," />
+            </Typography>
+                    <Typography variant="h5">
+                       Recovery Rate: {Math.round(recovered.value/closedCases*100)}%
+                    </Typography>
+                    <Typography variant="h5">
+                       Death Rate: {Math.round(deaths.value/closedCases*100)}%
+                    </Typography>
+                </CardContent>
+            </Grid>
+
+            
 </Grid>
     </div>
   );

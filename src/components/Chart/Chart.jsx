@@ -117,7 +117,7 @@ const polarChart = (
 
   return (
     <div>
-    <div className={styles.chartContainer}>
+    <div className={styles.barChartClass}>
       {country ? barChart : lineChart}
       </div>
       <div className={styles.polarChartClass}>

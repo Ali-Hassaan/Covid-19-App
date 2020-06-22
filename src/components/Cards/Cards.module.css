@@ -44,5 +44,22 @@
     
 }
 
+.ActiveCases {
+    margin: 2% 2px !important;
+    display: flex;
+    background: linear-gradient(57deg, rgba(177, 158, 158, 0.5), rgb(0, 0, 0, 0.5))
+}
+
+.ClosedCases {
+    margin: 2% 2px !important;
+    display: flex;
+    background: linear-gradient(57deg, rgb(255, 0, 0, 0.5), rgb(0, 255, 0, 0.5))
+}
+
+@media only screen and (max-width: 770px) {
+    .card {
+        margin: 2% 0 !important;
+    }
+}
 
 

@@ -1,8 +1,6 @@
 body {
  background-color: rgb(209, 204, 204, 0.5);
- display: flex;
-    justify-content: center;
-    width: 100%;
+ 
   }
   
   .container {
@@ -14,9 +12,6 @@ body {
   .image {
     width: 370px;
     margin-top: 50px;
-    display: flex;
-    width: 25%;
-    justify-content: center;
   }
   
   @media only screen and (max-width: 770px) {
